@@ -2,7 +2,7 @@
 
 import Paragraph from "@/styled/paragraph";
 import { Link } from "@chakra-ui/next-js";
-import { Box, Heading, Container, Stack, Text } from "@chakra-ui/react";
+import { Heading, Stack, Text } from "@chakra-ui/react";
 
 export default function Home() {
   return (

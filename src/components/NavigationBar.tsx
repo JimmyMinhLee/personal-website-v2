@@ -30,11 +30,13 @@ export const NavigationBar = () => {
         alignItems="center"
         justifyItems="space-between"
       >
-        <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-            jimmy lee
-          </Heading>
-        </Flex>
+        <Link href="/">
+          <Flex align="center" mr={5}>
+            <Heading as="h1" size="lg" letterSpacing={"tighter"}>
+              jimmy lee
+            </Heading>
+          </Flex>
+        </Link>
 
         <Stack
           direction={{ base: "column", md: "row" }}
