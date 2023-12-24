@@ -18,20 +18,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Providers>
-      <title>Jimmy Lee - Homepage</title>
-      <Container maxW="4xl">
-        <Flex justifyContent="center">
-          <Stack align={"center"} spacing={{ base: 8, md: 10 }}>
-            <NavigationBar />
-            <Banner />
-            <IntroductionCard />
-            <Divider />
-            <Container size="2xl">{children}</Container>
-          </Stack>
-        </Flex>
-        <Footer />
-      </Container>
-    </Providers>
+    <html lang="en">
+      <body>
+        <Providers>
+          <title>Jimmy Lee - Homepage</title>
+          <Container maxW="4xl">
+            <Flex justifyContent="center">
+              <Stack align={"center"} spacing={{ base: 8, md: 10 }}>
+                <NavigationBar />
+                <Banner />
+                <IntroductionCard />
+                <Divider />
+                <Container size="2xl">{children}</Container>
+              </Stack>
+            </Flex>
+            <Footer />
+          </Container>
+        </Providers>
+      </body>
+    </html>
   );
 }
