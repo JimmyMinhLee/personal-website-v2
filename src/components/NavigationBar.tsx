@@ -27,6 +27,7 @@ export const NavigationBar = () => {
         display="flex"
         p={2}
         maxW="container.md"
+        flexWrap={"wrap"}
         alignItems="center"
         justifyItems="space-between"
       >
@@ -53,7 +54,6 @@ export const NavigationBar = () => {
 
         <Box flex={1} alignItems="right">
           <ThemeToggleButton />
-          <Box ml={2} display={{ base: "inline-block", md: "none" }}></Box>
         </Box>
       </Container>
     </Box>

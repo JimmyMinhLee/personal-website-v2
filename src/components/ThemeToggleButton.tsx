@@ -5,7 +5,7 @@ import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 const ThemeToggleButton = () => {
   const { toggleColorMode } = useColorMode();
   return (
-    <AnimatePresence initial={false}>
+    <AnimatePresence initial={false} mode="wait">
       <motion.div
         style={{ display: "inline-block" }}
         key={useColorModeValue("light", "dark")}
