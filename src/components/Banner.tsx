@@ -14,8 +14,12 @@ export const Banner = () => {
     <Flex width="2xl" pt={28}>
       <Avatar
         borderColor={useColorModeValue("black", "white")}
+        borderStyle="solid"
+        showBorder={true}
         size="2xl"
         name="jimmyminhlee"
+        src={"/jimmy.jpeg"}
+        borderRadius="full"
       />
       <Box p={4} pl={12}>
         <Heading
