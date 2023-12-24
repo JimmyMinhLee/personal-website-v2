@@ -44,9 +44,9 @@ export const NavigationBar = () => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <Link href="/career">my career</Link>
-          <Link href="/projects">my projects</Link>
-          <Link href="/contact">contact me</Link>
+          <Link href="/career">career</Link>
+          <Link href="/projects">projects</Link>
+          <Link href="/writing">writing</Link>
         </Stack>
 
         <Box flex={1} alignItems="right">

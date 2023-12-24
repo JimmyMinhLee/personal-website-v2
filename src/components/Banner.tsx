@@ -11,7 +11,7 @@ import {
 
 export const Banner = () => {
   return (
-    <Flex width="2xl" pt={20}>
+    <Flex width="2xl" pt={28}>
       <Avatar
         borderColor={useColorModeValue("black", "white")}
         size="2xl"

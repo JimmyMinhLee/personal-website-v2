@@ -3,7 +3,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
 import { Banner } from "@/components/Banner";
+import { IntroductionCard } from "@/components/IntroductionCard";
 import { NavigationBar } from "@/components/NavigationBar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "jimmyminhlee",
@@ -17,21 +19,19 @@ export default function RootLayout({
 }) {
   return (
     <Providers>
-      <div>
-        <title>Jimmy Lee - Homepage</title>
-        <Container maxW="4xl">
-          <Flex justifyContent="center">
-            <Stack align={"center"} spacing={{ base: 8, md: 10 }}>
-              <NavigationBar />
-              <Banner />
-              <Container size="md">
-                <Divider />
-              </Container>
-              {children}
-            </Stack>
-          </Flex>
-        </Container>
-      </div>
+      <title>Jimmy Lee - Homepage</title>
+      <Container maxW="4xl">
+        <Flex justifyContent="center">
+          <Stack align={"center"} spacing={{ base: 8, md: 10 }}>
+            <NavigationBar />
+            <Banner />
+            <IntroductionCard />
+            <Divider />
+            <Container size="2xl">{children}</Container>
+          </Stack>
+        </Flex>
+        <Footer />
+      </Container>
     </Providers>
   );
 }
