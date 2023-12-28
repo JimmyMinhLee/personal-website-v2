@@ -1,15 +1,8 @@
 "use client";
 
-import { CareerSection, CareerYear } from "@/components/CareerEntries";
-import {
-  Flex,
-  Text,
-  Stack,
-  Heading,
-  UnorderedList,
-  ListItem,
-} from "@chakra-ui/react";
+import { Stack, Heading, Divider, useColorModeValue } from "@chakra-ui/react";
 import { Animate } from "@/components/Animate";
+import { ProjectEntry } from "./ProjectEntry";
 export default function Page() {
   return (
     <Stack>
@@ -26,7 +19,7 @@ export default function Page() {
           my projects
         </Heading>
       </Animate>
-      <Animate delay={0.2}>
+      <Animate delay={0.3}>
         <Heading
           variant="section-title"
           fontWeight={100}
@@ -39,39 +32,41 @@ export default function Page() {
           ongoing
         </Heading>
       </Animate>
-      <Animate delay={0.3}>
-        <Flex direction="row" pt={2}>
-          <Heading
-            fontWeight={50}
-            lineHeight={"100%"}
-            justifyContent="left"
-            fontSize={{ base: "lg", sm: "xl", md: "xl" }}
-            m={0}
-          >
-            jimmylee.xyz
-          </Heading>
-        </Flex>
-      </Animate>
-      <Animate delay={0.4}>
-        <Text>A personal website for me, built using Next.js & Chakra UI.</Text>
+      <ProjectEntry
+        delay={0.4}
+        name="jimmylee.xyz"
+        description="my personal website, built using next.js & chakra ui."
+      />
+      <Animate delay={0.45}>
+        <Divider m={4} borderColor={useColorModeValue("", "gray")} />
       </Animate>
       <Animate delay={0.3}>
-        <Flex direction="row" pt={2}>
-          <Heading
-            fontWeight={50}
-            lineHeight={"100%"}
-            justifyContent="left"
-            fontSize={{ base: "lg", sm: "xl", md: "xl" }}
-            m={0}
-          >
-            Nomad
-          </Heading>
-        </Flex>
+        <Heading
+          variant="section-title"
+          fontWeight={100}
+          fontSize={{ base: "xl", sm: "2xl", md: "4xl" }}
+          lineHeight={"100%"}
+          as="h3"
+          justifyContent="left"
+          m={0}
+        >
+          future
+        </Heading>
       </Animate>
-      <Animate delay={0.4}>
-        <Text>A social media application for wanderlusts. </Text>
+      <ProjectEntry
+        delay={0.5}
+        name="nomad"
+        description="social media application for wanderlusts"
+      />
+      <ProjectEntry
+        delay={0.5}
+        name="mail deleter"
+        description="google chrome extension for deleting old emails"
+      />
+      <Animate delay={0.55}>
+        <Divider m={4} borderColor={useColorModeValue("", "gray")} />
       </Animate>
-      <Animate delay={0.2}>
+      <Animate delay={0.6}>
         <Heading
           variant="section-title"
           fontWeight={100}
@@ -84,38 +79,16 @@ export default function Page() {
           previous
         </Heading>
       </Animate>
-      <Animate delay={0.3}>
-        <Flex direction="row" pt={2}>
-          <Heading
-            fontWeight={50}
-            lineHeight={"100%"}
-            justifyContent="left"
-            fontSize={{ base: "lg", sm: "xl", md: "xl" }}
-            m={0}
-          >
-            Boids
-          </Heading>
-        </Flex>
-      </Animate>
-      <Animate delay={0.4}>
-        <Text>Flocking simulator built with C# and Unity. </Text>
-      </Animate>
-      <Animate delay={0.3}>
-        <Flex direction="row" pt={2}>
-          <Heading
-            fontWeight={50}
-            lineHeight={"100%"}
-            justifyContent="left"
-            fontSize={{ base: "lg", sm: "xl", md: "xl" }}
-            m={0}
-          >
-            Too Many Cooks
-          </Heading>
-        </Flex>
-      </Animate>
-      <Animate delay={0.4}>
-        <Text>Overcooked, but with Zombies!</Text>
-      </Animate>
+      <ProjectEntry
+        delay={0.7}
+        name="too many cooks"
+        description="overcooked but with zombies."
+      />
+      <ProjectEntry
+        delay={0.8}
+        name="boids"
+        description="flocking simulation in unity."
+      />
     </Stack>
   );
 }
