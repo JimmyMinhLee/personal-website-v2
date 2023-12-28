@@ -40,7 +40,7 @@ export const NavigationBar = () => {
         <Link href="/">
           <Flex align="center" mr={5}>
             <Heading
-              ml={{ base: 0, sm: 10 }}
+              ml={{ base: 10 }}
               as="h1"
               size="lg"
               letterSpacing={"tighter"}
