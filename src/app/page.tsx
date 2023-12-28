@@ -56,7 +56,7 @@ export default function Home() {
           <Link href="/projects">
             <Text
               as={"span"}
-              bgGradient={"linear(to-l, #0FFFF0, #0063FF)"}
+              bgGradient={"linear(to-l, #91B5EB, #DCEFB1)"}
               bgClip="text"
             >
               personal projects
@@ -66,7 +66,7 @@ export default function Home() {
           <Link href="/writing">
             <Text
               as={"span"}
-              bgGradient={"linear(to-l, #0FFFF0, #0063FF)"}
+              bgGradient={"linear(to-l, #BF67C1, #E9BC4E)"}
               bgClip="text"
             >
               writing

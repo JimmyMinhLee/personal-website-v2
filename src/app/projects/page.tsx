@@ -36,6 +36,9 @@ export default function Page() {
         delay={0.4}
         name="jimmylee.xyz"
         description="my personal website, built using next.js & chakra ui."
+        startYear="2023"
+        endYear="ongoing"
+        githubLink="/personal-next-website"
       />
       <Animate delay={0.45}>
         <Divider m={4} borderColor={useColorModeValue("", "gray")} />
@@ -57,11 +60,17 @@ export default function Page() {
         delay={0.5}
         name="nomad"
         description="social media application for wanderlusts"
+        startYear="tbd"
+        endYear="tbd"
+        githubLink=""
       />
       <ProjectEntry
         delay={0.5}
         name="mail deleter"
         description="google chrome extension for deleting old emails"
+        startYear="tbd"
+        endYear="tbd"
+        githubLink=""
       />
       <Animate delay={0.55}>
         <Divider m={4} borderColor={useColorModeValue("", "gray")} />
@@ -83,11 +92,17 @@ export default function Page() {
         delay={0.7}
         name="too many cooks"
         description="overcooked but with zombies."
+        startYear="2019"
+        endYear="2019"
+        githubLink="too-many-cooks"
       />
       <ProjectEntry
         delay={0.8}
         name="boids"
         description="flocking simulation in unity."
+        startYear="2020"
+        endYear="2020"
+        githubLink="boids"
       />
     </Stack>
   );
