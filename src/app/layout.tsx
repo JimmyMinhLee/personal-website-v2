@@ -24,8 +24,8 @@ export default function RootLayout({
           <title>Jimmy Lee - Homepage</title>
           <Container maxW="4xl">
             <Flex justifyContent="center">
+              <NavigationBar />
               <Stack align={"center"} spacing={{ base: 8, md: 10 }}>
-                <NavigationBar />
                 <Banner />
                 <IntroductionCard />
                 <Divider />

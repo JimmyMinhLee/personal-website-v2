@@ -11,7 +11,7 @@ import {
 
 export const Banner = () => {
   return (
-    <Flex width="2xl" pt={28}>
+    <Flex maxWidth="2xl" pt={28}>
       <Avatar
         borderColor={useColorModeValue("black", "white")}
         borderStyle="solid"
@@ -32,8 +32,10 @@ export const Banner = () => {
         >
           jimmy minh lee
         </Heading>
-        <Text fontSize="xl">software engineer, brother & dog dad</Text>
-        <Text fontSize="sm">
+        <Text display={{ sm: "inline-flex" }} fontSize="xl">
+          software engineer, brother & dog dad
+        </Text>
+        <Text display={{ base: "none", sm: "inline-flex" }} fontSize="sm">
           perfecting my craft, becoming a master of something
         </Text>
       </Box>
