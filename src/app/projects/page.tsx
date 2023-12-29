@@ -72,6 +72,14 @@ export default function Page() {
         endYear="tbd"
         githubLink=""
       />
+      <ProjectEntry
+        delay={0.5}
+        name="daily gratitude journal"
+        description="daily gratitude journaling online application"
+        startYear="tbd"
+        endYear="tbd"
+        githubLink=""
+      />
       <Animate delay={0.55}>
         <Divider m={4} borderColor={useColorModeValue("", "gray")} />
       </Animate>
