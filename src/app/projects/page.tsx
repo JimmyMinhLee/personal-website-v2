@@ -40,6 +40,14 @@ export default function Page() {
         endYear="ongoing"
         githubLink="/personal-next-website"
       />
+      <ProjectEntry
+        delay={0.5}
+        name="daily gratitude journal"
+        description="daily gratitude journaling online application"
+        startYear="2023"
+        endYear="ongoing"
+        githubLink=""
+      />
       <Animate delay={0.45}>
         <Divider m={4} borderColor={useColorModeValue("", "gray")} />
       </Animate>
@@ -68,14 +76,6 @@ export default function Page() {
         delay={0.5}
         name="mail deleter"
         description="google chrome extension for deleting old emails"
-        startYear="tbd"
-        endYear="tbd"
-        githubLink=""
-      />
-      <ProjectEntry
-        delay={0.5}
-        name="daily gratitude journal"
-        description="daily gratitude journaling online application"
         startYear="tbd"
         endYear="tbd"
         githubLink=""
