@@ -39,6 +39,7 @@ export default function Page() {
         startYear="2023"
         endYear="ongoing"
         githubLink="/personal-next-website"
+        href="https://www.jimmylee.xyz"
       />
       <ProjectEntry
         delay={0.5}
@@ -46,7 +47,8 @@ export default function Page() {
         description="daily gratitude journaling online application"
         startYear="2023"
         endYear="ongoing"
-        githubLink=""
+        githubLink="/daily-gratitude-journal"
+        href="https://www.dailygratitude.xyz"
       />
       <Animate delay={0.45}>
         <Divider m={4} borderColor={useColorModeValue("", "gray")} />

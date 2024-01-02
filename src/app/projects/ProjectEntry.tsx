@@ -1,6 +1,16 @@
 import { Animate } from "@/components/Animate";
-import { Flex, Link, Heading, Stack, Tag, Text, Badge } from "@chakra-ui/react";
+import {
+  Flex,
+  Link,
+  Heading,
+  Stack,
+  Tag,
+  Text,
+  Badge,
+  LinkBox,
+} from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
+import { HiGlobe } from "react-icons/hi";
 export const ProjectEntry = ({
   name,
   description,
@@ -8,6 +18,7 @@ export const ProjectEntry = ({
   endYear,
   githubLink,
   delay,
+  href,
 }: {
   name: string;
   description: string;
@@ -15,6 +26,7 @@ export const ProjectEntry = ({
   startYear: string;
   endYear: string;
   delay: number;
+  href: string | undefined;
 }) => {
   return (
     <Stack direction="column">
@@ -39,6 +51,13 @@ export const ProjectEntry = ({
             >
               <FaGithub />
             </Link>
+            {href ? (
+              <Link isExternal href={href}>
+                <HiGlobe />
+              </Link>
+            ) : (
+              <> </>
+            )}
           </Stack>
         </Flex>
       </Animate>
