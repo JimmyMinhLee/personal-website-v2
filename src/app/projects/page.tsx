@@ -73,6 +73,7 @@ export default function Page() {
         startYear="tbd"
         endYear="tbd"
         githubLink=""
+        href={undefined}
       />
       <ProjectEntry
         delay={0.5}
@@ -81,6 +82,7 @@ export default function Page() {
         startYear="tbd"
         endYear="tbd"
         githubLink=""
+        href={undefined}
       />
       <Animate delay={0.55}>
         <Divider m={4} borderColor={useColorModeValue("", "gray")} />
@@ -105,6 +107,7 @@ export default function Page() {
         startYear="2019"
         endYear="2019"
         githubLink="too-many-cooks"
+        href={undefined}
       />
       <ProjectEntry
         delay={0.8}
@@ -113,6 +116,7 @@ export default function Page() {
         startYear="2020"
         endYear="2020"
         githubLink="boids"
+        href={undefined}
       />
     </Stack>
   );
