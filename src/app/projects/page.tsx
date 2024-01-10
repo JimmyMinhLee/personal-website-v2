@@ -32,25 +32,16 @@ export default function Page() {
           ongoing
         </Heading>
       </Animate>
-      <ProjectEntry
-        delay={0.4}
-        name="jimmylee.xyz"
-        description="my personal website, built using next.js & chakra ui."
-        startYear="2023"
-        endYear="ongoing"
-        githubLink="/personal-next-website"
-        href="https://www.jimmylee.xyz"
-      />
-      <ProjectEntry
-        delay={0.5}
-        name="daily gratitude journal"
-        description="daily gratitude journaling online application"
-        startYear="2023"
-        endYear="ongoing"
-        githubLink="/daily-gratitude-journal"
-        href="https://www.dailygratitude.xyz"
-      />
       <Animate delay={0.45}>
+        <ProjectEntry
+          delay={0.5}
+          name="nomad"
+          description="social media application for wanderlusts"
+          startYear="2024"
+          endYear="ongoing"
+          githubLink=""
+          href={undefined}
+        />
         <Divider m={4} borderColor={useColorModeValue("", "gray")} />
       </Animate>
       <Animate delay={0.3}>
@@ -66,15 +57,6 @@ export default function Page() {
           future
         </Heading>
       </Animate>
-      <ProjectEntry
-        delay={0.5}
-        name="nomad"
-        description="social media application for wanderlusts"
-        startYear="tbd"
-        endYear="tbd"
-        githubLink=""
-        href={undefined}
-      />
       <ProjectEntry
         delay={0.5}
         name="mail deleter"
@@ -100,6 +82,24 @@ export default function Page() {
           previous
         </Heading>
       </Animate>
+      <ProjectEntry
+        delay={0.4}
+        name="jimmylee.xyz"
+        description="my personal website, built using next.js & chakra ui."
+        startYear="2023"
+        endYear="2023"
+        githubLink="/personal-next-website"
+        href="https://www.jimmylee.xyz"
+      />
+      <ProjectEntry
+        delay={0.5}
+        name="daily gratitude journal"
+        description="daily gratitude journaling online application"
+        startYear="2023"
+        endYear="2023"
+        githubLink="/daily-gratitude-journal"
+        href="https://www.dailygratitude.xyz"
+      />
       <ProjectEntry
         delay={0.7}
         name="too many cooks"
