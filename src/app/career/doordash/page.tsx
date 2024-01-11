@@ -2,17 +2,18 @@
 
 import { Animate } from "@/components/Animate";
 import {
+  Badge,
   Container,
   Divider,
+  HStack,
   Heading,
   Text,
-  useColorModeValue,
 } from "@chakra-ui/react";
 
 export default function DoorDash() {
   return (
     <Animate delay={0.4}>
-      <Heading variant="section-title-without-underline"> DoorDash </Heading>
+      <Heading variant="section-title"> DoorDash </Heading>
       <Text variant="section-subtitle">Overview</Text>
       <Text pb={4}>
         I started working at DoorDash right after graduating from UC Berkeley in
@@ -22,6 +23,25 @@ export default function DoorDash() {
         involved building infrastructure for code coverage ingestion & flaky
         test detection/quarantining.
       </Text>
+      <HStack>
+        <Text size="sm" as="b">
+          Languages:
+        </Text>
+        <Badge>TypeScript</Badge>
+        <Badge>Python</Badge>
+        <Badge>Go</Badge>
+        <Badge>Kotlin</Badge>
+      </HStack>
+      <HStack>
+        <Text size="sm" as="b">
+          Technologies:
+        </Text>
+        <Badge>React</Badge>
+        <Badge>Kubernetes</Badge>
+        <Badge>Jacoco</Badge>
+        <Badge>Gradle</Badge>
+      </HStack>
+      <Divider pt={4}></Divider>
       <Text variant="section-subtitle">Test Quarantining</Text>
       <Text pb={4}>
         I'm currently starting to work on developing an algorithm for test
