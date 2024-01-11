@@ -63,7 +63,7 @@ export default function Page() {
           justifyContent="left"
           m={0}
         >
-          future
+          ideas
         </Heading>
       </Animate>
       <ProjectEntry
