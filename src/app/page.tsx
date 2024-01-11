@@ -2,7 +2,7 @@
 
 import Paragraph from "@/styled/paragraph";
 import { Link } from "@chakra-ui/next-js";
-import { Heading, Stack, Text } from "@chakra-ui/react";
+import { Heading, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 import { Animate } from "@/components/Animate";
 
 export default function Home() {
@@ -46,7 +46,10 @@ export default function Home() {
           <Link href="/career">
             <Text
               as={"span"}
-              bgImage={"linear(to-l, #e66465, #9198e5)"}
+              bgGradient={useColorModeValue(
+                "linear(to-l, #066465, #919800)",
+                "linear(to-l, #E0d917, #7cc0d8)"
+              )}
               bgClip="text"
             >
               resume & career
@@ -56,7 +59,10 @@ export default function Home() {
           <Link href="/projects">
             <Text
               as={"span"}
-              bgGradient={"linear(to-l, #91B5EB, #DCEFB1)"}
+              bgGradient={useColorModeValue(
+                "linear(to-l, #FF1D07, #771A00)",
+                "linear(to-l, #E08C99, #7cc0d8)"
+              )}
               bgClip="text"
             >
               personal projects
@@ -66,7 +72,10 @@ export default function Home() {
           <Link href="/writing">
             <Text
               as={"span"}
-              bgGradient={"linear(to-l, #BF67C1, #E9BC4E)"}
+              bgGradient={useColorModeValue(
+                "linear(to-l, #9E0C23, #07694A)",
+                "linear(to-l, #BF67C1, #E9BC4E)"
+              )}
               bgClip="text"
             >
               writing

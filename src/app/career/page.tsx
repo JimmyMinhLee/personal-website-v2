@@ -7,8 +7,12 @@ import {
   Heading,
   UnorderedList,
   ListItem,
+  Text,
+  Divider,
 } from "@chakra-ui/react";
 import { Animate } from "@/components/Animate";
+import { Link } from "@chakra-ui/next-js";
+import Paragraph from "@/styled/paragraph";
 export default function Page() {
   return (
     <Stack>
@@ -27,67 +31,35 @@ export default function Page() {
       </Animate>
       <Animate delay={0.3}>
         <Flex direction="row">
-          <CareerSection>
-            <CareerYear>
-              Software Engineer @ DoorDash (2022 → Current)
-            </CareerYear>
-          </CareerSection>
+          <Link href="/career/doordash">
+            <CareerSection>
+              <CareerYear>
+                Software Engineer @ DoorDash (2022 → Current)
+              </CareerYear>
+            </CareerSection>
+          </Link>
         </Flex>
       </Animate>
       <Animate delay={0.4}>
-        <UnorderedList>
-          <ListItem>
-            SWE on the Test Platform team, under Developer Platform.
-          </ListItem>
-          <ListItem>
-            Responsible for most things related to code coverage @ DoorDash,
-            built a dashboard for surfacing metrics, CI integrations for
-            uploading to our vendor, and working alongside our vendor on
-            scalability & reliability.
-          </ListItem>
-          <ListItem>
-            Built alerting & detection mechanisms for context propogation leaks,
-            analyzed it, and working to stop them from occurring.
-          </ListItem>
-          <ListItem>
-            Lead on internal service for fetching & aggregating data across all
-            levels of the testing pyramid.
-          </ListItem>
-        </UnorderedList>
+        <Text>
+          Working at DoorDash on the test platform team. Built out a code
+          coverage ecosystem & working on test quarantine algorithms.
+        </Text>
       </Animate>
+      <Divider />
       <Animate delay={0.5}>
         <Flex direction="row">
           <CareerSection>
-            <CareerYear>Graduated from UC Berkeley (Spring 2022)</CareerYear>
+            <CareerYear>
+              UC Berkeley Alumni (Fall 2018 → Spring 2022)
+            </CareerYear>
           </CareerSection>
         </Flex>
-        <UnorderedList>
-          <ListItem>
-            B.A. in Computer Science with minor in Data Science, GPA: 3.5
-          </ListItem>
-        </UnorderedList>
+        <Text>
+          B.A. in Computer Science with minor in Data Science, GPA: 3.5
+        </Text>
       </Animate>
-      <Animate delay={0.6}>
-        <Flex direction="row">
-          <CareerSection>
-            <CareerYear>President @ Upsync Berkeley (2021 → 2022)</CareerYear>
-          </CareerSection>
-        </Flex>
-        <UnorderedList>
-          <ListItem>
-            President of 50+ undergraduate consultants, managed 12 consulting
-            projects ranging from small startups to F500 across both semesters.
-          </ListItem>
-          <ListItem>
-            Raised income of club from $1,000 in &apos;18-&apos;20 to over
-            $10,000 a semester.
-          </ListItem>
-          <ListItem>
-            Retention rate increased from 35% to 82%, member satisfaction from
-            22% to 78%.
-          </ListItem>
-        </UnorderedList>
-      </Animate>
+      <Divider />
       <Animate delay={0.7}>
         <Flex direction="row">
           <CareerSection>
@@ -96,27 +68,9 @@ export default function Page() {
             </CareerYear>
           </CareerSection>
         </Flex>
-        <UnorderedList>
-          <ListItem>
-            Built keyboard shortcuts in the Ridgeline application.
-          </ListItem>
-        </UnorderedList>
+        <Text>Built keyboard shortcuts in the Ridgeline application.</Text>
       </Animate>
-      <Animate delay={0.8}>
-        <Flex direction="row">
-          <CareerSection>
-            <CareerYear>
-              Tutor @ CS 170 (Advanced Algorithms) (Fall 2021)
-            </CareerYear>
-          </CareerSection>
-        </Flex>
-        <UnorderedList>
-          <ListItem>
-            Ran office hours, helped in discussions, showed students how to get
-            the intuition behind algorithms.
-          </ListItem>
-        </UnorderedList>
-      </Animate>
+      <Divider />
       <Animate delay={0.9}>
         <Flex direction="row">
           <CareerSection>
@@ -125,12 +79,9 @@ export default function Page() {
             </CareerYear>
           </CareerSection>
         </Flex>
-        <UnorderedList>
-          <ListItem>
-            Built a schema translation pipeline used in P.S. Now.
-          </ListItem>
-        </UnorderedList>
+        <Text>Built a schema translation pipeline used in P.S. Now.</Text>
       </Animate>
+      <Divider />
       <Animate delay={1}>
         <Flex direction="row">
           <CareerSection>
@@ -139,43 +90,12 @@ export default function Page() {
             </CareerYear>
           </CareerSection>
         </Flex>
-        <UnorderedList>
-          <ListItem>
-            Built an E2E hardware testing application for launch of the RED
-            Komodo.
-          </ListItem>
-        </UnorderedList>
+        <Text>
+          Built an E2E hardware testing application for launch of the RED
+          Komodo.
+        </Text>
       </Animate>
-      <Animate delay={1.1}>
-        <Flex direction="row">
-          <CareerSection>
-            <CareerYear>
-              Project Lead @ Berkeley Codeology (2019 → 2022)
-            </CareerYear>
-          </CareerSection>
-        </Flex>
-        <UnorderedList>
-          <ListItem>
-            Taught students how to build video games over the course of the
-            semester for 4 semesters.
-          </ListItem>
-        </UnorderedList>
-      </Animate>
-      <Animate delay={1.2}>
-        <Flex direction="row">
-          <CareerSection>
-            <CareerYear>
-              Student Mentor @ Berkeley Anova (2019 → 2022)
-            </CareerYear>
-          </CareerSection>
-        </Flex>
-        <UnorderedList>
-          <ListItem>
-            Taught computer science to underresourced schools in the Oakland
-            area.
-          </ListItem>
-        </UnorderedList>
-      </Animate>
+      <Divider />
     </Stack>
   );
 }
