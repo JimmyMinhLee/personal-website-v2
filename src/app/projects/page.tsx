@@ -35,6 +35,15 @@ export default function Page() {
       <Animate delay={0.45}>
         <ProjectEntry
           delay={0.5}
+          name="take me back to..."
+          description="spotify api wrapper that shows you the songs you were listening to at certain points of your life"
+          startYear="2024"
+          endYear="ongoing"
+          githubLink=""
+          href={undefined}
+        />
+        <ProjectEntry
+          delay={0.5}
           name="nomad"
           description="social media application for wanderlusts"
           startYear="2024"
