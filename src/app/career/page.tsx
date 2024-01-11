@@ -46,7 +46,7 @@ export default function Page() {
           coverage ecosystem & working on test quarantine algorithms.
         </Text>
       </Animate>
-      <Divider />
+      <div></div>
       <Animate delay={0.5}>
         <Flex direction="row">
           <CareerSection>
@@ -59,7 +59,7 @@ export default function Page() {
           B.A. in Computer Science with minor in Data Science, GPA: 3.5
         </Text>
       </Animate>
-      <Divider />
+      <div></div>
       <Animate delay={0.7}>
         <Flex direction="row">
           <CareerSection>
@@ -70,7 +70,7 @@ export default function Page() {
         </Flex>
         <Text>Built keyboard shortcuts in the Ridgeline application.</Text>
       </Animate>
-      <Divider />
+      <div></div>
       <Animate delay={0.9}>
         <Flex direction="row">
           <CareerSection>
@@ -81,7 +81,7 @@ export default function Page() {
         </Flex>
         <Text>Built a schema translation pipeline used in P.S. Now.</Text>
       </Animate>
-      <Divider />
+      <div></div>
       <Animate delay={1}>
         <Flex direction="row">
           <CareerSection>
@@ -95,7 +95,7 @@ export default function Page() {
           Komodo.
         </Text>
       </Animate>
-      <Divider />
+      <div></div>
     </Stack>
   );
 }
