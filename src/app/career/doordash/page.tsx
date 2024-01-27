@@ -1,14 +1,7 @@
 "use client";
 
 import { Animate } from "@/components/Animate";
-import {
-  Badge,
-  Container,
-  Divider,
-  HStack,
-  Heading,
-  Text,
-} from "@chakra-ui/react";
+import { Badge, Divider, HStack, Heading, Text } from "@chakra-ui/react";
 
 export default function DoorDash() {
   return (
@@ -44,7 +37,7 @@ export default function DoorDash() {
       <Divider pt={4}></Divider>
       <Text variant="section-subtitle">Test Quarantining</Text>
       <Text pb={4}>
-        I'm currently starting to work on developing an algorithm for test
+        I&apos;m currently starting to work on developing an algorithm for test
         quarantining & flaky test detection.
       </Text>
       <Text variant="section-subtitle">Code Coverage</Text>

@@ -3,7 +3,7 @@ export type Project = {
   description: string;
   startYear: string;
   endYear: string;
-  status: string;
+  status: "ongoing" | "completed" | "future";
   githubLink: string;
   href: string;
 };

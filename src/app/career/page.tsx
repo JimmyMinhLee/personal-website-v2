@@ -1,22 +1,13 @@
 "use client";
 
-import { CareerSection, CareerYear } from "@/components/CareerEntries";
-import {
-  Flex,
-  Stack,
-  Heading,
-  UnorderedList,
-  ListItem,
-  Text,
-  Divider,
-} from "@chakra-ui/react";
-import { Animate } from "@/components/Animate";
+import { CareerSection } from "@/components/CareerEntries";
+import { Flex, Stack, Heading, Text } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/next-js";
-import Paragraph from "@/styled/paragraph";
+import { Animate } from "@/components/Animate";
 export default function Page() {
   return (
-    <Stack>
-      <Animate delay={0.2}>
+    <Animate delay={0.2}>
+      <Stack>
         <Heading
           variant="section-title"
           fontWeight={100}
@@ -26,76 +17,64 @@ export default function Page() {
           justifyContent="left"
           m={0}
         >
-          my career
+          Career
         </Heading>
-      </Animate>
-      <Animate delay={0.3}>
         <Flex direction="row">
           <Link href="/career/doordash">
             <CareerSection>
-              <CareerYear>
-                Software Engineer @ DoorDash (2022 → Current)
-              </CareerYear>
+              <Text variant="section-subtitle">
+                SWE @ DoorDash (2022 → Current)
+              </Text>
             </CareerSection>
           </Link>
         </Flex>
-      </Animate>
-      <Animate delay={0.4}>
         <Text>
           Working at DoorDash on the test platform team. Built out a code
           coverage ecosystem & working on test quarantine algorithms.
         </Text>
-      </Animate>
-      <div></div>
-      <Animate delay={0.5}>
+        <div></div>
         <Flex direction="row">
           <CareerSection>
-            <CareerYear>
-              UC Berkeley Alumni (Fall 2018 → Spring 2022)
-            </CareerYear>
+            <Text variant="section-subtitle">
+              Alumni @ Cal (Fall 2018 → Spring 2022)
+            </Text>
           </CareerSection>
         </Flex>
         <Text>
           B.A. in Computer Science with minor in Data Science, GPA: 3.5
         </Text>
-      </Animate>
-      <div></div>
-      <Animate delay={0.7}>
+        <div></div>
         <Flex direction="row">
           <CareerSection>
-            <CareerYear>
-              Software Engineering Intern @ Ridgeline (Summer 2021)
-            </CareerYear>
+            <Text variant="section-subtitle">
+              SWE Intern @ Ridgeline (Summer 2021)
+            </Text>
           </CareerSection>
         </Flex>
         <Text>Built keyboard shortcuts in the Ridgeline application.</Text>
-      </Animate>
-      <div></div>
-      <Animate delay={0.9}>
+        <div></div>
         <Flex direction="row">
           <CareerSection>
-            <CareerYear>
-              Software Engineering Intern @ Playstation (Summer 2020)
-            </CareerYear>
+            <Text variant="section-subtitle">
+              SWE Intern @ Playstation (Summer 2020)
+            </Text>
           </CareerSection>
         </Flex>
         <Text>Built a schema translation pipeline used in P.S. Now.</Text>
-      </Animate>
-      <div></div>
-      <Animate delay={1}>
+        <div></div>
         <Flex direction="row">
           <CareerSection>
-            <CareerYear>
-              Software Engineering Intern @ RED Digital Cinema (Summer 2019)
-            </CareerYear>
+            <Text variant="section-subtitle">
+              SWE Intern @ RED Digital Cinema (Summer 2019)
+            </Text>
           </CareerSection>
         </Flex>
         <Text>
           Built an E2E hardware testing application for launch of the RED
           Komodo.
         </Text>
-      </Animate>
-      <div></div>
-    </Stack>
+        <div></div>
+      </Stack>
+    </Animate>
   );
 }

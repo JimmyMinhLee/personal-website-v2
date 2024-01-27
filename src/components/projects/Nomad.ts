@@ -1,7 +1,7 @@
 import { Project } from "./Project";
 
 export const Nomad: Project = {
-  name: "nomad - a social media application for wanderlusts",
+  name: "Nomad",
   description:
     "Sometimes, you want travel recommendations from people you trust and know.",
   startYear: "tbd",

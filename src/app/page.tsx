@@ -7,8 +7,8 @@ import { Animate } from "@/components/Animate";
 
 export default function Home() {
   return (
-    <Stack justifyContent="space-around" alignItems={"flex-start"}>
-      <Animate delay={0.2}>
+    <Animate delay={0.2}>
+      <Stack justifyContent="space-around" alignItems={"flex-start"}>
         <Heading
           fontWeight={100}
           fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
@@ -18,31 +18,25 @@ export default function Home() {
           justifyContent="left"
           m={0}
         >
-          who am i?
+          Who am I?
         </Heading>
-      </Animate>
-      <Animate delay={0.4}>
         <Paragraph>
-          my name is jimmy. i&apos;m a software engineer based in southern
-          california, currently working in the infrastructure organization at
-          doordash. i love to make music, play volleyball, and spend time with
+          My name is Jimmy. I&apos;m a software engineer based in Southern
+          California, currently working in the Infrastructure Organization at
+          DoorDash. I love to make music, play volleyball, and spend time with
           my family and dog.
         </Paragraph>
-      </Animate>
 
-      <Animate delay={0.6}>
         <Heading
           fontSize={{ base: "2xl", sm: "3xl", md: "5xl" }}
           variant="section-title"
           justifyContent="left"
           m={0}
         >
-          what&apos;s here?
+          What&apos;s here?
         </Heading>
-      </Animate>
-      <Animate delay={0.8}>
         <Paragraph>
-          {"here you can find my "}
+          {"On this website you can find my "}
           <Link href="/career">
             <Text
               as={"span"}
@@ -82,10 +76,10 @@ export default function Home() {
             </Text>
           </Link>
           {
-            ". this website aims to keep track of all the things i've been working on, and store notes that i might need for the future."
+            ". this website aims to keep track of all the things I've been working on, and store notes that I might need for the future."
           }
         </Paragraph>
-      </Animate>
-    </Stack>
+      </Stack>
+    </Animate>
   );
 }
