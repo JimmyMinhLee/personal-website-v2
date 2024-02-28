@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-export const Animate = ({
+export const AnimateChildren = ({
   children,
   delay,
 }: {

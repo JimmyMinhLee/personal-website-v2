@@ -4,11 +4,11 @@ import { Link } from "@chakra-ui/next-js";
 import { Box, Stack } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiMailOpen } from "react-icons/hi";
-import { Animate } from "./Animate";
+import { AnimateChildren } from "../animation/AnimateChildren";
 
-export default function Footer() {
+export const Footer = () => {
   return (
-    <Animate delay={1}>
+    <AnimateChildren delay={1}>
       <Box width={"100%"} p={12}>
         <Stack flexDirection="row" justifyContent="center">
           <Link href="https://www.github.com/JimmyMinhLee">
@@ -22,6 +22,6 @@ export default function Footer() {
           </Link>
         </Stack>
       </Box>
-    </Animate>
+    </AnimateChildren>
   );
-}
+};

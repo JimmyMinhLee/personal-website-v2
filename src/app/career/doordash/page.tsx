@@ -1,11 +1,11 @@
 "use client";
 
-import { Animate } from "@/components/Animate";
+import { AnimateChildren } from "@/components/animation/AnimateChildren";
 import { Badge, Divider, HStack, Heading, Text } from "@chakra-ui/react";
 
 export default function DoorDash() {
   return (
-    <Animate delay={0.4}>
+    <AnimateChildren delay={0.4}>
       <Heading variant="section-title"> DoorDash </Heading>
       <Text variant="section-subtitle">Overview</Text>
       <Text pb={4}>
@@ -51,6 +51,6 @@ export default function DoorDash() {
         My first work at DoorDash was to migrate some internal tools from our
         old Django monolith to React.
       </Text>
-    </Animate>
+    </AnimateChildren>
   );
 }

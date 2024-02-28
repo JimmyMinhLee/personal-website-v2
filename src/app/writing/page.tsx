@@ -2,12 +2,12 @@
 
 import { Stack, Heading, Flex, Link, Text, Divider } from "@chakra-ui/react";
 
-import { CareerSection } from "@/components/CareerEntries";
-import { Animate } from "@/components/Animate";
+import { Section } from "@/components/styled/styled";
+import { AnimateChildren } from "@/components/animation/AnimateChildren";
 
 export default function Page() {
   return (
-    <Animate delay={0.2}>
+    <AnimateChildren delay={0.2}>
       <Stack>
         <Heading
           pt={4}
@@ -23,13 +23,13 @@ export default function Page() {
         </Heading>
         <Flex direction="row">
           <Link href="/writing/devlog-one">
-            <CareerSection>
+            <Section>
               <Text variant="section-subtitle"> [1] Creating The Game </Text>
-            </CareerSection>
+            </Section>
           </Link>
         </Flex>
         <div></div>
       </Stack>
-    </Animate>
+    </AnimateChildren>
   );
 }

@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/next-js";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import ThemeToggleButton from "./ThemeToggleButton";
+import { ThemeToggleButton } from "../ThemeToggleButton";
 
 export const NavigationBar = () => {
   return (

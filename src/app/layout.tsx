@@ -2,10 +2,9 @@ import { Container, Stack, Divider, Flex } from "@chakra-ui/react";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
-import { Banner } from "@/components/Banner";
-import { IntroductionCard } from "@/components/IntroductionCard";
-import { NavigationBar } from "@/components/NavigationBar";
-import Footer from "@/components/Footer";
+import { NavigationBar } from "@/components/layout/NavigationBar";
+import { Footer } from "@/components/layout/Footer";
+import { Head } from "@/components/layout/Head";
 
 export const metadata: Metadata = {
   title: "jimmyminhlee",
@@ -26,8 +25,7 @@ export default function RootLayout({
             <Flex justifyContent="center">
               <NavigationBar />
               <Stack align={"center"} spacing={{ base: 8, md: 10 }}>
-                <Banner />
-                <IntroductionCard />
+                <Head />
                 <Divider />
                 <Container size="2xl">{children}</Container>
               </Stack>

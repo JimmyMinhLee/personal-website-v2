@@ -2,9 +2,9 @@
 
 import { Stack, Heading, Text } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/next-js";
-import { Animate } from "@/components/Animate";
+import { AnimateChildren } from "@/components/animation/AnimateChildren";
 
-function CareerEntry(title: string, href: string) {
+function Entry(title: string, href: string) {
   return (
     <Stack direction="row" alignItems="center">
       <Link href={href} alignItems="center">
@@ -14,7 +14,7 @@ function CareerEntry(title: string, href: string) {
   );
 }
 
-function CareerHeading(title: string) {
+function _Heading(title: string) {
   return (
     <Heading
       pt={4}
@@ -32,22 +32,19 @@ function CareerHeading(title: string) {
 }
 export default function Page() {
   return (
-    <Animate delay={0.2}>
+    <AnimateChildren delay={0.2}>
       <Stack>
-        {CareerHeading("Post Graduate")}
-        {CareerEntry("[0] Software Engineer  @ DoorDash", "/career/doordash")}
-        {CareerHeading("College")}
-        {CareerEntry(
-          "[fin] Graduated with a B.A. in Computer Science",
-          "/career"
-        )}
-        {CareerEntry("[5] President @ UpSync Consulting ", "/career/cal")}
-        {CareerEntry("[4] Mentor @ Anova ", "/career/cal")}
-        {CareerEntry("[3] Project Leader @ Codeology ", "/career/cal")}
-        {CareerEntry("[2] SWE Intern @ Ridgeline ", "/career/ridgeline")}
-        {CareerEntry("[1] SWE Intern @ Playstation", "/career/playstation")}
-        {CareerEntry("[0] SWE Intern @ RED Digital Cinema", "/career/red")}
+        {_Heading("Post Graduate")}
+        {Entry("[0] Software Engineer  @ DoorDash", "/career/doordash")}
+        {_Heading("College")}
+        {Entry("[fin] Graduated with a B.A. in Computer Science", "/career")}
+        {Entry("[5] President @ UpSync Consulting ", "/career/cal")}
+        {Entry("[4] Mentor @ Anova ", "/career/cal")}
+        {Entry("[3] Project Leader @ Codeology ", "/career/cal")}
+        {Entry("[2] SWE Intern @ Ridgeline ", "/career/ridgeline")}
+        {Entry("[1] SWE Intern @ Playstation", "/career/playstation")}
+        {Entry("[0] SWE Intern @ RED Digital Cinema", "/career/red")}
       </Stack>
-    </Animate>
+    </AnimateChildren>
   );
 }

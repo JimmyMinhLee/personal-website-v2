@@ -3,11 +3,11 @@
 import Paragraph from "@/styled/paragraph";
 import { Link } from "@chakra-ui/next-js";
 import { Heading, Stack, Text, useColorModeValue } from "@chakra-ui/react";
-import { Animate } from "@/components/Animate";
+import { AnimateChildren } from "@/components/animation/AnimateChildren";
 
 export default function Home() {
   return (
-    <Animate delay={0.2}>
+    <AnimateChildren delay={0.2}>
       <Stack justifyContent="space-around" alignItems={"flex-start"}>
         <Heading
           fontWeight={100}
@@ -80,6 +80,6 @@ export default function Home() {
           }
         </Paragraph>
       </Stack>
-    </Animate>
+    </AnimateChildren>
   );
 }
