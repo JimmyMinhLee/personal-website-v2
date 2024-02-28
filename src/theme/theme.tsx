@@ -36,10 +36,9 @@ const components = {
         lineHeight: "110%",
       },
       "section-title-without-underline": {
-        marginBottom: 3,
         fontWeight: 100,
-        fontSize: { base: "2xl", sm: "3xl", md: "4xl" },
-        lineHeight: "110%",
+        fontSize: { base: "3xl", sm: "4xl", md: "6xl" },
+        lineHeight: "120%",
       },
     },
   },
@@ -48,8 +47,7 @@ const components = {
       "section-subtitle": {
         marginBottom: 2,
         marginTop: 3,
-        fontWeight: "bold",
-        fontSize: { base: "lg", sm: "xl", md: "2xl" },
+        fontSize: { base: "lg", sm: "xl", md: "xl" },
         lineHeight: "100%",
         justifyContent: "left",
       },
