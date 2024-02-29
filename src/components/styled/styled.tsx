@@ -10,3 +10,10 @@ export const Year = styled.span`
   font-weight: bold;
   margin-right: 1em;
 `;
+
+export const Paragraph = styled.p`
+  text-align: justify;
+  text-indent: 1em;
+  hyphens: auto;
+  padding-bottom: 12;
+`;

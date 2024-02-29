@@ -25,15 +25,10 @@ const components = {
   Heading: {
     variants: {
       "section-title": {
-        textDecoration: "underline",
-        textUnderlineOffset: 6,
-        textDecorationColor: "#525252",
-        textDecorationThickness: 4,
-        marginTop: 3,
-        marginBottom: 4,
-        fontWeight: 100,
-        fontSize: { base: "3xl", sm: "4xl", md: "6xl" },
+        fontWeight: 50,
+        fontSize: { base: "sm", sm: "4xl", md: "6xl" },
         lineHeight: "110%",
+        justifyContent: "left",
       },
       "section-title-without-underline": {
         fontWeight: 100,
@@ -46,7 +41,7 @@ const components = {
     variants: {
       "section-subtitle": {
         marginBottom: 2,
-        marginTop: 3,
+        marginTop: 2,
         fontSize: { base: "lg", sm: "xl", md: "xl" },
         lineHeight: "100%",
         justifyContent: "left",

@@ -58,7 +58,7 @@ export const NavigationBar = () => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <Link href="/career">career</Link>
+          <Link href="/about">about</Link>
           <Link href="/projects">projects</Link>
           <Link href="/writing">writing</Link>
         </Stack>

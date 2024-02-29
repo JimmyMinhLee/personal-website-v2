@@ -1,6 +1,5 @@
 "use client";
 
-import Paragraph from "@/styled/paragraph";
 import { Link } from "@chakra-ui/next-js";
 import { Heading, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 import { AnimateChildren } from "@/components/animation/AnimateChildren";
@@ -10,33 +9,26 @@ export default function Home() {
     <AnimateChildren delay={0.2}>
       <Stack justifyContent="space-around" alignItems={"flex-start"}>
         <Heading
-          fontWeight={100}
-          fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
-          lineHeight={"110%"}
-          as="h3"
           variant="section-title"
-          justifyContent="left"
-          m={0}
+          pb={2}
         >
-          Who am I?
+          Hey!
         </Heading>
-        <Paragraph>
-          My name is Jimmy. I&apos;m a software engineer based in Southern
-          California, currently working in the Infrastructure Organization at
-          DoorDash. I love to make music, play volleyball, and spend time with
-          my family and dog.
-        </Paragraph>
+        <AnimateChildren delay={0.4}>
+          <Text >
+            My name is Jimmy. Welcome to my website. 
+          </Text>
+        </AnimateChildren>
 
-        <Heading
-          fontSize={{ base: "2xl", sm: "3xl", md: "5xl" }}
-          variant="section-title"
-          justifyContent="left"
-          m={0}
+        <AnimateChildren delay={0.6}>
+        <Text
+          variant="section-subtitle"
+          pb={2}
         >
           What&apos;s here?
-        </Heading>
-        <Paragraph>
-          {"On this website you can find my "}
+        </Text>
+        <Text>
+          {"You can find my "}
           <Link href="/career">
             <Text
               as={"span"}
@@ -76,9 +68,10 @@ export default function Home() {
             </Text>
           </Link>
           {
-            ". this website aims to keep track of all the things I've been working on, and store notes that I might need for the future."
+            " all documented here. This website aims to keep track of all the things I've been working on, and store notes that I might need for the future."
           }
-        </Paragraph>
+        </Text>
+        </AnimateChildren>
       </Stack>
     </AnimateChildren>
   );
