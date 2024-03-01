@@ -12,7 +12,7 @@ const styles = {
   // Sets the background
   global: (props: Object) => ({
     "html, body": {
-      background: mode("#f0e7db", "#202023")(props),
+      background: mode("#ebece9", "#202023")(props),
     },
   }),
 };

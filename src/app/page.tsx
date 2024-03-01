@@ -1,7 +1,7 @@
 "use client";
 
 import { Link } from "@chakra-ui/next-js";
-import { Heading, Stack, Text, useColorModeValue } from "@chakra-ui/react";
+import { Heading, Container, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 import { AnimateChildren } from "@/components/animation/AnimateChildren";
 
 export default function Home() {

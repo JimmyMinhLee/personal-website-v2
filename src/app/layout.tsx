@@ -21,13 +21,13 @@ export default function RootLayout({
       <body>
         <Providers>
           <title>Jimmy Lee - Homepage</title>
-          <Container maxW="4xl">
+          <Container maxW="6xl">
             <Flex justifyContent="center">
               <NavigationBar />
               <Stack align={"center"} spacing={{ base: 8, md: 10 }}>
                 <Head />
                 <Divider />
-                <Container size="2xl">{children}</Container>
+                <Container maxWidth="3xl">{children}</Container>
               </Stack>
             </Flex>
             <Footer />

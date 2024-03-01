@@ -7,12 +7,13 @@ import {
   Heading,
   Text,
   useColorModeValue,
+  VStack 
 } from "@chakra-ui/react";
 
 export const Head = () => {
   return (
     <>
-      <Flex maxWidth="2xl" pt={28}>
+      <Flex maxWidth="4xl" pt={28}>
         <Avatar
           borderColor={useColorModeValue("black", "white")}
           borderStyle="solid"
@@ -22,7 +23,7 @@ export const Head = () => {
           src={"/jimmy.jpeg"}
           borderRadius="full"
         />
-        <Box p={4} pl={12}>
+        <VStack p={4} pl={12} alignItems="left">
           <Heading
             as="h6"
             bgGradient={useColorModeValue(
@@ -39,7 +40,7 @@ export const Head = () => {
           <Text display={{ base: "none", sm: "inline-flex" }} fontSize="sm">
             perfecting my craft, becoming a master of something
           </Text>
-        </Box>
+        </VStack>
       </Flex>
       <Box
         borderRadius="lg"

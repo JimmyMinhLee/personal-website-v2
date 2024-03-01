@@ -18,6 +18,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/next-js";
 import { AnimateChildren } from "@/components/animation/AnimateChildren";
+import Timeline from "@/components/about/Timeline";
 
 export default function Page() {
   return (
@@ -32,56 +33,9 @@ export default function Page() {
           Berkeley from 2018 - 2022, and also did a lot of cool campus
           organizations during my time there.
         </Text>
-        <br />
-        <Tabs isFitted orientation="vertical">
-          <TabList>
-            <Tab> SWE @ DoorDash </Tab>
-            <Tab>Alum @ Cal </Tab>
-            <Tab>SWE Intern @ Ridgeline </Tab>
-            <Tab>SWE Intern @ Playstation </Tab>
-            <Tab>SWE Intern @ RED Digital Cinema</Tab>
-          </TabList>
-
-          <TabPanels>
-            <TabPanel>
-              <Card>
-                <CardHeader>
-                  <Text m={0} variant="section-subtitle">
-                    Summary
-                  </Text>
-                </CardHeader>
-                <CardBody>
-                  <Stack divider={<StackDivider />} spacing="4">
-                    <Box>
-                      <Heading size="xs" textTransform="uppercase">
-                        When?
-                      </Heading>
-                      <Text pt="2" fontSize="sm">
-                        June &apos;22 - Current
-                      </Text>
-                    </Box>
-                    <Box>
-                      <Heading size="xs" textTransform="uppercase">
-                        Overview
-                      </Heading>
-                      <Text pt="2" fontSize="sm">
-                        Code coverage, storefront testing, context propogation
-                      </Text>
-                    </Box>
-                  </Stack>
-                </CardBody>
-              </Card>
-            </TabPanel>
-
-            <TabPanel>
-              <p>two!</p>
-            </TabPanel>
-            <TabPanel>
-              <p>three!</p>
-            </TabPanel>
-          </TabPanels>
-        </Tabs>
       </Stack>
+      <Text pt={6} pb={0} variant="section-subtitle"> Timeline </Text>
+      <Timeline/>
     </AnimateChildren>
   );
 }
