@@ -8,7 +8,7 @@ export default function Page() {
     <AnimateChildren delay={0.2}>
       <Stack>
         <Heading variant="section-title" mb={0}>
-          My Projects
+          Under Construction
         </Heading>
       </Stack>
     </AnimateChildren>

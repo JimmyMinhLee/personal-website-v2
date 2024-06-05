@@ -1,0 +1,37 @@
+
+import MdxLayout from '@/components/layout/MdxLayout'
+
+# Ridgeline 
+
+## Overview 
+
+I spent my junior year summer of college working at Ridgeline in Tahoe, Nevada. It was a blessing 
+to be able to experience Tahoe while also growing & developing my skills as a software engineer. 
+My team worked on the UI components of the application.
+
+
+import { AnimateChildren } from "@/components/animation/AnimateChildren";
+import { Box, List, ListItem, Badge, Divider, HStack, Heading, Text } from "@chakra-ui/react";
+
+<Box py={4} >
+        <Text size="sm" as="b">
+          Languages:
+        <Badge>TypeScript</Badge>
+        <Badge>Python</Badge>
+        </Text>
+        <Text size="sm" as="b">
+          Technologies:
+        <Badge>React</Badge>
+        </Text>
+</Box>
+
+        <Divider />
+
+<Text pt={2} variant="section-subtitle"> Keyboard Shortcuts </Text>
+
+My major work at Ridgeline was on building out the keyboard shortcuts system in the application. 
+We needed to register inputs while also dynamically updating the tooltips wherever needed.
+
+export default function MDXPage({ children }) {
+        return <MdxLayout>{children}</MdxLayout>
+}

@@ -6,7 +6,7 @@ import { HiOutlinePresentationChartBar } from "react-icons/hi";
 export const milestones = [
   {
     id: 5,
-    categories: ["Software Engineer I"],
+    categories: ["Software Engineer II"],
     title: "DoorDash",
     icon: SiDoordash,
     description: `After graduating from UC Berkeley, started my career as a Software Engineer in DoorDash's infrastructure team.`,
@@ -20,7 +20,7 @@ export const milestones = [
     icon: FaUniversity,
     description: `Graduated in 2022 from UC Berkeley with a B.A. in Computer Science & minor in Data Science.`,
     date: "Spring 2022",
-    href: "about",
+    href: "about/berkeley",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const milestones = [
     icon: AiOutlineStock,
     description: `Spent the summer in Tahoe, working on building keyboard shortcuts and page bookmarking in the Ridgeline application.`,
     date: "Summer 2021",
-    href: "about",
+    href: "about/ridgeline",
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ export const milestones = [
     icon: FaPlaystation,
     description: `Worked on schema translation pipelines for registering data on the P.S. Now network for the PS5.`,
     date: "Summer 2020",
-    href: "about",
+    href: "about/playstation",
   },
   {
     id: 1,

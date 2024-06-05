@@ -1,0 +1,48 @@
+import MdxLayout from '@/components/layout/MdxLayout'
+
+# UC Berkeley 
+
+## Overview 
+
+    I was blessed to be able to attend UC Berkeley for undergrad, where I learned a lot about 
+    computer science, mentorship, and overall how to be independent. During my time there, I was 
+    involved with couple different undergraduate organizations.
+
+
+import { AnimateChildren } from "@/components/animation/AnimateChildren";
+import { Box, List, ListItem, Badge, Divider, HStack, Heading, Text } from "@chakra-ui/react";
+
+<Box py={4} >
+        <Text size="sm" as="b">
+            Major Coursework:
+        <Badge>Data Structures & Algorithms</Badge>
+        <Badge>Efficient Algorithms </Badge>
+        <Badge>Data Science Principles</Badge>
+        <Badge>Cybersecurity</Badge>
+        <Badge>Building Circuits</Badge>
+        <Badge>Ethics in Computer Science</Badge>
+        <Badge>Healthcare & Actuary Statistics</Badge>
+        </Text>
+</Box>
+
+        <Divider />
+
+<Text pt={2} variant="section-subtitle"> UpSync Consulting</Text>
+
+My lasting legacy at UC Berkeley was my time with UpSync Consulting, where I grew and built out a lot of the organization's foundations. 
+We started as a group of ~20 undergraduates doing contract consulting work for startups, and eventually grew to over ~40 active members working 
+with F500 companies. Our semesterly donations totalled over $10,000. Now, the organization works for high-profile clients such as 
+Patagonia, Adidas, Nvidia, Nestle, Atlassian, Intuit, with sponsorships from D.E. Shaw & Jane Street.
+
+## ANova 
+
+I was also a member of Berkeley Anova, teaching computer science to youth at high schools & middle schools around the bay area.
+
+
+## Codeology
+
+And of course, both a project manager & developer for Berkeley Codeology. 
+
+export default function MDXPage({ children }) {
+        return <MdxLayout>{children}</MdxLayout>
+}

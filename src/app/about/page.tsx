@@ -1,22 +1,6 @@
 "use client";
 
-import {
-  Stack,
-  Heading,
-  Text,
-  Divider,
-  TabList,
-  Tab,
-  TabPanels,
-  TabPanel,
-  Tabs,
-  Card,
-  Box,
-  StackDivider,
-  CardHeader,
-  CardBody,
-} from "@chakra-ui/react";
-import { Link } from "@chakra-ui/next-js";
+import { Stack, Heading, Text } from "@chakra-ui/react";
 import { AnimateChildren } from "@/components/animation/AnimateChildren";
 import Timeline from "@/components/about/Timeline";
 
@@ -34,8 +18,11 @@ export default function Page() {
           organizations during my time there.
         </Text>
       </Stack>
-      <Text pt={6} pb={0} variant="section-subtitle"> Timeline </Text>
-      <Timeline/>
+      <Text pt={6} pb={0} variant="section-subtitle">
+        {" "}
+        Timeline{" "}
+      </Text>
+      <Timeline />
     </AnimateChildren>
   );
 }

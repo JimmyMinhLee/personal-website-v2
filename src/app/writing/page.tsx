@@ -10,7 +10,6 @@ export default function Page() {
     <AnimateChildren delay={0.2}>
       <Stack>
         <Heading
-          pt={4}
           variant="section-subtitle"
           fontWeight={100}
           fontSize={{ base: "xl", sm: "2xl", md: "4xl" }}
@@ -19,15 +18,8 @@ export default function Page() {
           justifyContent="left"
           m={0}
         >
-          RPG: Developer Logs
+          Under Construction
         </Heading>
-        <Flex direction="row">
-          <Link href="/writing/devlog-one">
-            <Section>
-              <Text variant="section-subtitle"> [1] Creating The Game </Text>
-            </Section>
-          </Link>
-        </Flex>
         <div></div>
       </Stack>
     </AnimateChildren>
