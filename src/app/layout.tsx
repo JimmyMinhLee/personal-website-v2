@@ -1,38 +1,34 @@
-import { Container, Stack, Divider, Flex } from "@chakra-ui/react";
 import type { Metadata } from "next";
-import "./globals.css";
-import { Providers } from "./providers";
-import { NavigationBar } from "@/components/layout/NavigationBar";
-import { Footer } from "@/components/layout/Footer";
-import { Head } from "@/components/layout/Head";
+import PageContent from "@/chakra/PageContent";
+import { Analytics } from "@vercel/analytics/next";
+import { Providers } from "@/chakra/Providers";
 
 export const metadata: Metadata = {
-  title: "jimmyminhlee",
-  description: "a personal website",
+  title: "Jimmy Lee",
+  description: "A personal portfolio for Software Engineer, Jimmy Lee",
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Contrail+One&family=Fustat:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Style+Script&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="icon" href="/icons/logo.ico" />
+      </head>
       <body>
         <Providers>
-          <title>Jimmy Lee - Homepage</title>
-          <Container maxW="6xl">
-            <Flex justifyContent="center">
-              <NavigationBar />
-              <Stack align={"center"} spacing={{ base: 8, md: 10 }}>
-                <Head />
-                <Divider />
-                <Container maxWidth="3xl">{children}</Container>
-              </Stack>
-            </Flex>
-            <Footer />
-          </Container>
+          <PageContent>{children}</PageContent>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );

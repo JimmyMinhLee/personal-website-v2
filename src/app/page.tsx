@@ -1,76 +1,62 @@
 "use client";
 
-import { Link } from "@chakra-ui/next-js";
+import { theme } from "@/chakra/theme";
 import {
+  Box,
   Heading,
-  Container,
-  Stack,
   Text,
-  useColorModeValue,
+  Image,
+  Stack,
+  AspectRatio,
 } from "@chakra-ui/react";
-import { AnimateChildren } from "@/components/animation/AnimateChildren";
+import { motion } from "framer-motion";
 
-export default function Home() {
+const Page = () => {
   return (
-    <AnimateChildren delay={0.2}>
-      <Stack justifyContent="space-around" alignItems={"flex-start"}>
-        <Heading variant="section-title" pb={2}>
-          Hey!
-        </Heading>
-        <AnimateChildren delay={0.4}>
-          <Text>My name is Jimmy. Welcome to my website.</Text>
-        </AnimateChildren>
+    <Box
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="flex-start"
+      w="8xl"
+    >
+      <Hero />
+      {/* <AboutMe /> */}
+    </Box>
+  );
+};
 
-        <AnimateChildren delay={0.6}>
-          <Text variant="section-subtitle" pb={2}>
-            What&apos;s here?
+const Hero = () => {
+  return (
+    <Box h="100vh">
+      <Heading zIndex={4} mt={10}>
+        Jimmy Lee
+      </Heading>
+      <Box display="flex">
+        <AspectRatio ratio={16 / 9} w="4xl" p={8}>
+          <Image src="/bench.jpg" filter="grayscale(40%)" pr={8} />
+        </AspectRatio>
+        <Stack>
+          <Heading variant="subheading">About Me</Heading>
+          <Text>
+            Vietnamese Software Engineer from Orange County, California.
           </Text>
           <Text>
-            {"You can find my "}
-            <Link href="/about">
-              <Text
-                as={"span"}
-                bgGradient={useColorModeValue(
-                  "linear(to-l, #066465, #919800)",
-                  "linear(to-l, #E0d917, #7cc0d8)"
-                )}
-                bgClip="text"
-              >
-                resume & career
-              </Text>
-            </Link>
-            {", "}
-            <Link href="/projects">
-              <Text
-                as={"span"}
-                bgGradient={useColorModeValue(
-                  "linear(to-l, #FF1D07, #771A00)",
-                  "linear(to-l, #E08C99, #7cc0d8)"
-                )}
-                bgClip="text"
-              >
-                personal projects
-              </Text>
-            </Link>
-            {", and "}
-            <Link href="/writing">
-              <Text
-                as={"span"}
-                bgGradient={useColorModeValue(
-                  "linear(to-l, #9E0C23, #07694A)",
-                  "linear(to-l, #BF67C1, #E9BC4E)"
-                )}
-                bgClip="text"
-              >
-                writing
-              </Text>
-            </Link>
-            {
-              " all documented here. This website aims to keep track of all the things I've been working on, and store notes that I might need for the future."
-            }
+            Currently SWE2 @ DoorDash, Co-Founder at Eos Design Studio.
           </Text>
-        </AnimateChildren>
-      </Stack>
-    </AnimateChildren>
+          <Text>I will finish this website soon.</Text>
+        </Stack>
+      </Box>
+    </Box>
   );
-}
+};
+
+const AboutMe = () => {
+  return (
+    <Box bgColor={theme.colors.primary} position="relative" h="100vh" w="100%">
+      <Text> Hello </Text>
+    </Box>
+  );
+};
+
+export default Page;
